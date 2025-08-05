@@ -2,8 +2,8 @@
 	<div class="container m-auto">
 		<AuthorInfo />
 		<AbstractComp />
-		<CodeBox :json="json1" />
-		<CodeBox :json="json2" />
+		<CodeBox :index="1" :json="json1" />
+		<CodeBox :index="2" :json="json2" />
 		<CitationComp />
 	</div>
 </template>

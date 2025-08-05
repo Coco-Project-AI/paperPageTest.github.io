@@ -62,5 +62,5 @@
             "code":" "
         }
     ],
-    "videoName":"/videos/whiteboard.mp4"
+    "videoName":"./videos/whiteboard.mp4"
 }

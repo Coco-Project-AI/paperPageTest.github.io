@@ -39,12 +39,13 @@ const activeIndex = ref(1)
 const code = ref('')
 const props = defineProps({
 	json: Object,
+	index: Number
 })
 onMounted(() => {
 	getCode()
 })
 const getCode = () => {
-	loadTxtFile(`/code/video${activeIndex.value}/${activeIndex.value}.txt`, function (data) {
+	loadTxtFile(`./code/video${props.index}/${activeIndex.value}.txt`, function (data) {
 		code.value = data
 	});
 }
