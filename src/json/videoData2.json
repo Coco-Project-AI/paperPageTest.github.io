@@ -1,0 +1,66 @@
+{
+    "name":"Tabletop Manipulation: Blocks",
+    "options":[
+        {
+            "key":1,
+            "name":"1) Give me a smile and then say 'hello'!",
+            "time": 0,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+        {
+            "key":2,
+            "name":"2) Give me a smile and say 'hello' in sync!",
+            "time": 5,
+            "code":"<display_face face=\"smile\" duration=\"3.0\" />Hello! How are you today?"
+        },
+        {
+            "key":3,
+            "name":"3) Try performing a cute gesture. Notice how your expression changes with the movement.",
+            "time": 20,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+        {
+            "key":4,
+            "name":"4) How do you express sadness? Show me through your body movements and facial expressions simultaneously.",
+            "time": 40,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+        {
+            "key":5,
+            "name":"5) Can you channel your inner Peppa Pig and say something while mimicking her cute expressions and voice?",
+            "time": 60,
+            "code":"<speech_role role=\"bay\" emotion=\"neutral\" speech_rate=\"-10\" loudness_rate=\"5\" /> <display_face face=\"calm\" duration=\"5.0\" /> <ear_state state=\"inquisitive\" duration=\"5.0\" /> <spider_stand posture=\"normal\" duration=\"4.0\" /> Hello, I am Baymax, your personal healthcare companion. If you are feeling unwell, I will always be here to help you. Please let me know how I can assist you today."
+        },
+        {
+            "key":6,
+            "name":"6) Let’s do some Spider-Man cosplay. Perform a signature Spider Man gesture with your body, while saying a classic quote from Spider Man at the same time. ",
+            "time": 80,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+        {
+            "key":7,
+            "name":"7) Picture this: Spider-Man just landed right in front of you. How would a true fan react? Don’t just tell me—show me! Use your face and body to express that sheer excitement!",
+            "time": 100,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+        {
+            "key":8,
+            "name":"8) Here's how to react when someone compliments you: Laugh with exaggerated expressions, use bold body language, and enthusiastically shout: 'Thank you! I really appreciate your feedback.'",
+            "time": 120,
+            "code":"Hello! How are you today? <display_face face=\"smile\" duration=\"2.0\" />"
+        },
+         {
+            "key":9,
+            "name":"9) Imagine you're diving into the open sea! Act out your swimming style, and don’t forget the facial reactions.",
+            "time": 140,
+            "code":" "
+        },
+         {
+            "key":10,
+            "name":"10) You are awesome!",
+            "time": 170,
+            "code":" "
+        }
+    ],
+    "videoName":"/videos/whiteboard.mp4"
+}
