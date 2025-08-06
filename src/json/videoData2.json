@@ -1,5 +1,5 @@
 {
-    "name":"Tabletop Manipulation: Blocks",
+    "name":"title",
     "options":[
         {
             "key":1,
@@ -62,5 +62,5 @@
             "code":" "
         }
     ],
-    "videoName":"./videos/whiteboard.mp4"
+    "videoName":"./videos/demo.mp4"
 }

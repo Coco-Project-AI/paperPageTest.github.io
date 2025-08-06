@@ -10,17 +10,12 @@
 			</li>
 		</ul>
 		<div class="w-2/5 mx-auto px-4 my-4">
+			<!--todo 此处数量变动需要再改样式 -->
 			<ul class="link-box grid grid-cols-1 sm:grid-cols-2 gap-8">
-				<li>
-					<a href="https://arxiv.org/abs/2209.07753">
-						<div><img src="../assets/img/paper_small.png" height="60px"></div>
-						<h4><strong>Paper</strong></h4>
-					</a>
-				</li>
-				<li>
-					<a href="https://github.com/google-research/google-research/tree/master/code_as_policies">
-						<div><img src="../assets/img/github.png" height="60px"></div>
-						<h4><strong>Code</strong></h4>
+				<li v-for="item in mainInfo.linkList" :key="item.name">
+					<a :href="item.url">
+						<div><img :src="item.img" height="60px"></div>
+						<h4><strong>{{ item.name }}</strong></h4>
 					</a>
 				</li>
 			</ul>

@@ -1,9 +1,15 @@
 <template>
 	<div class="container m-auto">
+		<!-- //主要内容和图片路径已存在maininfo.json，可直接修改json文件 -->
 		<AuthorInfo />
 		<AbstractComp />
-		<CodeBox :index="1" :json="json1" />
-		<CodeBox :index="2" :json="json2" />
+
+
+		<!-- video相关commond和videourl，每个video都是单独json， 代码部分与public/code/video[index]的txt文件一一对应 -->
+		<CodeBox :index="1" :json="json1" /> 
+		<!-- <CodeBox :index="2" :json="json2" /> -->
+
+		<!-- mainInfo.json -->
 		<CitationComp />
 	</div>
 </template>
@@ -14,7 +20,7 @@ import AbstractComp from './components/AbstractComp.vue'
 import CodeBox from './components/CodeBox.vue'
 import CitationComp from './components/CitationComp.vue'
 import json1 from './json/videoData1.json'
-import json2 from './json/videoData2.json'
+// import json2 from './json/videoData2.json'
 </script>
 
 <style scoped>
