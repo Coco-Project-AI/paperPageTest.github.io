@@ -1,7 +1,7 @@
 <template>
 	<div class="mt-4">
 		<video id="v0" width="100%" preload="metadata" playsinline="" muted="" loop="" autoplay="">
-			<source :src="mainInfo.mainGif" type="video/mp4">
+			<source :src="mainInfo.mainGif" type="video/webm">
 		</video>
 		<div class="mt-4 text-left">
 			<h1 class="text-2xl leading-20">Abstract</h1>
