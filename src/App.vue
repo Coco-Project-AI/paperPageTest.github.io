@@ -7,7 +7,10 @@
 
 		<!-- video相关commond和videourl，每个video都是单独json， 代码部分与public/code/video[index]的txt文件一一对应 -->
 		<CodeBox :index="1" :json="json1" /> 
-		<!-- <CodeBox :index="2" :json="json2" /> -->
+		<CodeBox :index="2" :json="json2" />
+		<CodeBox :index="3" :json="json3" />
+		<CodeBox :index="4" :json="json4" />
+
 
 		<!-- mainInfo.json -->
 		<CitationComp />
@@ -20,7 +23,9 @@ import AbstractComp from './components/AbstractComp.vue'
 import CodeBox from './components/CodeBox.vue'
 import CitationComp from './components/CitationComp.vue'
 import json1 from './json/videoData1.json'
-// import json2 from './json/videoData2.json'
+import json2 from './json/videoData2.json'
+import json3 from './json/videoData3.json'
+import json4 from './json/videoData4.json'
 </script>
 
 <style scoped>
