@@ -1,5 +1,5 @@
 <template>
-	<div class="card mb-4 mt-8 text-left border-solid border border-slate-100">
+	<div class="card mb-4 mt-8 text-left border-solid border">
 		<h5 class="card-header text-xl ledaing-10 ">{{ json.name }} </h5>
 		<div class="card-body p-4">
 			<p class="my-2">Choose a command:</p>
