@@ -1,5 +1,5 @@
 <template>
-	<div class="card mb-4 mt-8 text-left border-solid border border-slate-500">
+	<div class="card mb-4 mt-8 text-left border-solid border border-slate-100">
 		<h5 class="card-header text-xl ledaing-10 ">{{ json.name }} </h5>
 		<div class="card-body p-4">
 			<p class="my-2">Choose a command:</p>
@@ -49,9 +49,9 @@ const getCode = () => {
 	});
 }
 const handleSelectChange = (val) => {
-	console.log(val)
+	// console.log(val)
 	const timePoint = props.json.options[val - 1].time
-activeIndex.value = val
+	activeIndex.value = val
 	if (videoPlayer.value) {
 		videoPlayer.value.currentTime = timePoint
 		videoPlayer.value.play()
