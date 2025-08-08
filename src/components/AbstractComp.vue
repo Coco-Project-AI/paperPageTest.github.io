@@ -2,14 +2,14 @@
 	<div class="mt-4">
 		<div class="mt-4 text-left">
 			<h1 class="text-2xl leading-20">Abstract</h1>
-			<p class="abstract-text text-base leading-6" v-html="mainInfo.abstract"></p>
+			<p class="abstract-text text-sm leading-6" v-html="mainInfo.abstract"></p>
 			<p class="mt-4 text-center">
 				<img :src="mainInfo.mainImg" width="100%">
 			</p>
 			<div class="mt-8 text-left break-all">
 				<h3 class="text-2xl leading-20">Experiment Videos and Generated Code</h3>
-				<p class="mt-2 text-base leading-6">{{ mainInfo.ExperimentText1 }}</p>
-				<p class="mt-6 text-base leading-6">{{ mainInfo.ExperimentText2 }}</p>
+				<p class="mt-2 text-sm leading-6">{{ mainInfo.ExperimentText1 }}</p>
+				<p class="mt-2 text-sm leading-6">{{ mainInfo.ExperimentText2 }}</p>
 			</div>
 		</div>
 	</div>

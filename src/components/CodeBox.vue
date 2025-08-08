@@ -3,13 +3,12 @@
 		<h5 class="card-header text-xl ledaing-10 ">{{ json.name }} </h5>
 		<div class="card-body p-4">
 			<p class="my-2">Choose a command:</p>
-			<select v-model="activeIndex" name="selectBox" class="form-select" size="5" aria-label="Select command"
-				@change="handleSelectChange">
-				<option class="w-full text-base" v-for="option in json.options" :key="option.key" :value="option.key"
-					:title="option.name">
+			<div name="selectBox" class="form-select">
+				<p class="w-full text-sm cursor-pointer" v-for="option in json.options" :key="option.key"
+					@click="handleSelectChange(option.key)" :title="option.name">
 					{{ option.name }}
-				</option>
-			</select>
+				</p>
+			</div>
 
 			<div class="mb-2">
 				<video ref="videoPlayer" width="100%" preload="metadata" playsinline="" controls="">
@@ -24,7 +23,7 @@
 				</div>
 				<div class="w-full">
 					<!-- <highlightjs language="xml" :code="json.options[activeIndex - 1].code"></highlightjs> -->
-					<highlightjs language="xml" :code="code"></highlightjs>
+					<highlightjs class="code-container" language="xml" :code="code"></highlightjs>
 				</div>
 			</div>
 		</div>
@@ -49,10 +48,10 @@ const getCode = () => {
 		code.value = data
 	});
 }
-const handleSelectChange = (event) => {
-	const selectedValue = event.target.value
-	const timePoint = props.json.options[selectedValue - 1].time
-
+const handleSelectChange = (val) => {
+	console.log(val)
+	const timePoint = props.json.options[val - 1].time
+activeIndex.value = val
 	if (videoPlayer.value) {
 		videoPlayer.value.currentTime = timePoint
 		videoPlayer.value.play()
@@ -73,7 +72,7 @@ const loadTxtFile = (url, callback) => {
 
 </script>
 
-<style scoped>
+<style>
 .card {
 	position: relative;
 	display: flex;
@@ -101,6 +100,8 @@ const loadTxtFile = (url, callback) => {
 .form-select {
 	display: block;
 	width: 100%;
+	height: 150px;
+	overflow-x: auto;
 	padding: .375rem 0 1rem .75rem;
 	-moz-padding-start: calc(0.75rem - 3px);
 	font-size: 1rem;
@@ -125,7 +126,13 @@ const loadTxtFile = (url, callback) => {
 	background-image: none;
 }
 
-v-deep pre code.hljs {
-	line-height: 22px; 
+pre code.hljs {
+	line-height: 22px;
+	font-size: 14px;
+}
+.code-container {
+	width: 100%;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 </style>
