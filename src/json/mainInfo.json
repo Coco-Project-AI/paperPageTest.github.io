@@ -3,35 +3,71 @@
     "mainGif": "./videos/demo2.webm", 
     "authorList":[
         {
-            "name": "author1",
+            "name": "Jian Gong",
             "url": "xxx"
         },
         {
-            "name": "author2",
+            "name": "Youwei Huang",
             "url": "xxx"
         },
         {
-            "name": "author3",
+            "name": "Bo Yuan",
             "url": "xxx"
         },
         {
-            "name": "author4",
-            "url": ""
-        },
-        {
-            "name": "author5",
+            "name": "Ming Zhu",
             "url": "xxx"
         },
         {
-            "name": "author6",
+            "name": "Juncheng Zhan",
             "url": "xxx"
         },
         {
-            "name": "author7",
+            "name": "Jinke Wang",
             "url": "xxx"
         },
         {
-            "name": "author8",
+            "name": "Hang Shu",
+            "url": "xxx"
+        },
+        {
+            "name": "Mingyue Xiong",
+            "url": "xxx"
+        },
+        {
+            "name": "Yanjun Ye",
+            "url": "xxx"
+        },
+        {
+            "name": "Yufan Zu",
+            "url": "xxx"
+        },
+        {
+            "name": "Yang Zhou",
+            "url": "xxx"
+        },
+        {
+            "name": "Yihan Ding",
+            "url": "xxx"
+        },
+        {
+            "name": "Xuannian Chen",
+            "url": "xxx"
+        },
+        {
+            "name": "Xingyu Lu",
+            "url": "xxx"
+        },
+        {
+            "name": "Runjie Ban",
+            "url": "xxx"
+        },
+        {
+            "name": "Bingchao Huang",
+            "url": "xxx"
+        },
+        {
+            "name": "Fusen Liu",
             "url": "xxx"
         }
     ],
@@ -39,7 +75,7 @@
         {
             "name": "Paper",
             "img": "./img/paper_small.png",
-            "url": "https://github.com/Coco-Robot/GhostShell"
+            "url": "https://arxiv.org/abs/2508.05298"
         },
         {
             "name": "Code",
@@ -47,12 +83,12 @@
             "url": "https://github.com/Coco-Robot/GhostShell"
         }
     ],
-    "abstract": "We present GhostShell, a novel approach that leverages Large LanguageModels (LLMs) to enable streaming and concurrent behavioral programming for embodiedsystems. In contrast to conventional methods that rely on pre-scheduled action sequencesor behavior trees, GhostShell drives embodied systems to act on-the-fly by issuing functioncalls incrementally as tokens are streamed from the LLM. GhostShell features a streamingXML function token parser, a dynamic function interface mapper, and a multi-channelscheduler that orchestrates intra-channel synchronous and inter-channel asynchronousfunction calls, thereby coordinating serial-parallel embodied actions across multiple roboticcomponents as directed by the LLM. We benchmark GhostShell on our robot prototypeCOCO through extensive experiments, covering performance evaluation across representive LLMs, over one hundred real-world tasks, and comparisons against baselines built onLLMs’ native function calling APIs. The results demonstrate that GhostShell outperformsnative function call baselines with faster response times and more flexible behaviororchestration. Among the evaluated LLMs, Claude Sonnet 4 consistently achieved the bestoverall performance. GhostShell also proved effective in long-horizon tasks, such as mirrorself-recognition and object-finding, demonstrating its strong robustness and generalization.",
+    "abstract": "We present GhostShell, a novel approach that leverages Large Language Models(LLMs) to enable streaming and concurrent behavioral programming for embodied systems. In contrast to conventional methods that rely on pre-scheduled action sequences or behavior trees, GhostShell drives embodied systems to act on-the-fly by issuing function calls incrementally as tokens are streamed from the LLM. GhostShell features a streaming XML function token parser, a dynamic function interface mapper, and a multi-channel scheduler that orchestrates intra-channel synchronous and inter-channel asynchronous function calls, thereby coordinating serial-parallel embodied actions across multiple robotic components as directed by the LLM. We evaluate GhostShell on our robot prototype COCO through comprehensive grounded experiments across 34 real-world interaction tasks and multiple LLMs. The results demonstrate that our approach achieves state-of-the-art Behavioral Correctness Metric of 0.85 with Claude-4-Sonnet and up to 66× faster response times compared to LLM native function calling APIs. GhostShell also proves effective in long-horizon multimodal tasks, demonstrating strong robustness and generalization.",
     "mainImg": "./img/demo.png",
     "mainVideo": "./videos/demo.mp4",
-    "ExperimentText1":"ExperimentText1ExperimentText1ExperimentText1ExperimentText1ExperimentText1",
-    "ExperimentText2":"ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2ExperimentText2",
-    "paperUrl":"https://github.com/Coco-Robot/GhostShell",
-    "citationContent":"@inproceedings{codeaspolicies2022,<br/>title={Code as Policies: Language Model Programs for Embodied Control},<br/>author={Jacky Liang and Wenlong Huang and Fei Xia and Peng Xu and Karol Hausman and Brian Ichter and Pete Florence and Andy Zeng},<br/>booktitle={arXiv preprint arXiv:2209.07753},<br/>year={2022}<br/>}",
-    "acknowledgementsContent": "Special thanks to Vikas Sindhwani, Vincent Vanhoucke for helpful feedback on writing, Chad Boodoo for operations and hardware support."
+    "ExperimentText1":"Below are some demonstration videos of experiments. The videos not only include actions, but also the voice and expressions of the robot.",
+    "ExperimentText2":"We also place the XML commands generated by LLM at the bottom of the video. The robot completes tasks by executing these XML statements.",
+    "paperUrl":"https://arxiv.org/abs/2508.05298",
+    "citationContent":"@misc{gong2025ghostshellstreamingllmfunction,<br> title={GhostShell: Streaming LLM Function Calls for Concurrent Embodied Programming},<br> author={Jian Gong and Youwei Huang and Bo Yuan and Ming Zhu and Juncheng Zhan and Jinke Wang and Hang Shu and Mingyue Xiong and Yanjun Ye and Yufan Zu and Yang Zhou and Yihan Ding and Xuannian Chen and Xingyu Lu and Runjie Ban and Bingchao Huang and Fusen Liu},<br> year={2025},<br> eprint={2508.05298},<br> archivePrefix={arXiv},<br> primaryClass={cs.RO},<br> url={https://arxiv.org/abs/2508.05298},<br> }",
+    "acknowledgementsContent": ""
 }
