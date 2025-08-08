@@ -119,6 +119,9 @@ const loadTxtFile = (url, callback) => {
 	-moz-appearance: none;
 	appearance: none;
 }
+.form-select p:hover{
+	background: #eee;
+}
 
 .form-select[multiple],
 .form-select[size]:not([size="1"]) {
