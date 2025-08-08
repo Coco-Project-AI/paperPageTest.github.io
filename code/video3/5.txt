@@ -2,4 +2,6 @@
 <RUN id="You Can Really Dance" />
 <RUN id="You Can Really Dance" />
 </SAVE>
-Okay~ I've saved this as "You Can Really Dance twice"! Just tell me the name next time you want to see it~ <ear_swing side="left" speed="70" duration="0.3" /><ear_swing side="right" speed="70" duration="0.3" />
+Okay~ I've saved this as "You Can Really Dance twice"! Just tell me the name next time you want to see it~ 
+<ear_swing side="left" speed="70" duration="0.3" />
+<ear_swing side="right" speed="70" duration="0.3" />
